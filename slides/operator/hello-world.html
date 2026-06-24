@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="../../modules/highlight/monokai-sublime.css" />
 
     <link rel="stylesheet" href="../../assets/styles/colors.css" />
-    <link rel="stylesheet" href="../../assets/styles/contact.css" />
     <link rel="stylesheet" href="../../assets/styles/main.css" />
-    <link rel="stylesheet" href="../../assets/styles/process.css" />
-    <link rel="stylesheet" href="../../assets/styles/spiral.css" />
-    <link rel="stylesheet" href="../../assets/styles/team.css" />
-    <link rel="stylesheet" href="../../assets/styles/timeline.css" />
-    <link rel="stylesheet" href="../../assets/styles/video.css" />
+    <link rel="stylesheet" href="assets/styles/contact.css" />
+    <link rel="stylesheet" href="assets/styles/process.css" />
+    <link rel="stylesheet" href="assets/styles/spiral.css" />
+    <link rel="stylesheet" href="assets/styles/team.css" />
+    <link rel="stylesheet" href="assets/styles/timeline.css" />
+    <link rel="stylesheet" href="assets/styles/video.css" />
 
   </head>
   <body>
@@ -31,7 +31,7 @@
         <section class="hero">
           <section data-auto-animate data-menu-title="Plateforme AI" data-background="../../assets/hero.png">
             <img class="logo" src="../../assets/logo.svg" width="800">
-            <div><span style='padding: 10px 20px; background-color: #e3e7f0; color: #000000; font-size: 1.25rem; opacity: 0.8;'>Automation for Innovators</span></div>
+            <div><span style='padding: 10px 20px; background-color: #e3e7f0; color: #000000; font-size: 1.25rem; opacity: 0.8;'>Automation for Innovators</span></div><div class='hero-nav'><span class='hero-nav__label'>Navigate with</span><div class='hero-nav__keys'><div class='hero-nav__keys-row'><kbd class='kbd' aria-label='Up'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m5 12 7-7 7 7'/><path d='M12 19V5'/></svg></kbd></div><div class='hero-nav__keys-row'><kbd class='kbd' aria-label='Left'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m12 19-7-7 7-7'/><path d='M19 12H5'/></svg></kbd><kbd class='kbd' aria-label='Down'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 5v14'/><path d='m19 12-7 7-7-7'/></svg></kbd><kbd class='kbd' aria-label='Right'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14'/><path d='m12 5 7 7-7 7'/></svg></kbd></div></div></div>
           </section>
           <section data-auto-animate data-menu-title="Operator">
             <div>
@@ -140,7 +140,7 @@
     <p class="process__badge primary">Automatiser</p>
     <h3 class="process__title">Vos skills</h3>
     <p class="process__text">
-      Boîte à outils réutilisables qui documentent vos processus et enseignent vos actions et workflows spécifiques à l'opérateur IA
+      Boîtes à outils réutilisables qui documentent vos processus et enseignent vos actions et workflows spécifiques à l'opérateur IA
       <br /><br />
       <a class="process__link" href="https://agentskills.io/home" target="_blank" rel="noopener">
         <span>Agent Skills</span>
@@ -217,8 +217,8 @@
 <br />
 
 <ul>
-  <li><input type="checkbox" checked disabled /> <a href="#/poc-tickets">Gestion des tickets</a></li>
-  <li><input type="checkbox" unchecked disabled /> <a href="#/poc-errors">Gestion des messages d'erreur</a></li>
+  <li><input type="checkbox" checked disabled /> <a href="#/poc-tickets">Gestion de tickets</a></li>
+  <li><input type="checkbox" unchecked disabled /> <a href="#/poc-errors">Gestion de messages d'erreur</a></li>
   <li><input type="checkbox" unchecked disabled /> <a href="#/poc-sales">Administration des ventes</a></li>
 </ul>
 
@@ -234,9 +234,9 @@
 
 <!-- .slide: id="poc-tickets" -->
 
-### POC - Gestion des tickets
+### POC - Gestion de tickets
 
-<small>Gestion des tickets et résolutions dans une application support</small>
+<p style="font-size: 1.25rem;">Gestion de tickets et résolutions dans une application de support test</p>
 
 <div class="video-split">
   <div class="video-split__scenario">
@@ -268,9 +268,9 @@
 
 <!-- .slide: id="poc-errors" -->
 
-### POC - Gestion des messages d'erreur
+### POC - Gestion de messages d'erreur
 
-<small>Gestion des messages d'erreur dans une application vente</small>
+<p style="font-size: 1.25rem;">Gestion de messages d'erreur dans une application test</p>
 
 <div class="placeholder">
   <img src="/assets/images/placeholder.png" alt="placeholder" />
@@ -283,7 +283,7 @@
 
 ### POC - Administration des ventes
 
-<small>Création de commandes dans une application vente</small>
+<p style="font-size: 1.25rem;">Création de commandes dans une application de vente test</p>
 
 <div class="placeholder">
   <img src="/assets/images/placeholder.png" alt="placeholder" />
@@ -305,8 +305,10 @@
 
 ## Approche projet
 
+<p style="margin-bottom: 0; font-size: 1.5rem;">Déployer l'IA dans votre entreprise en moins de 4 mois</p>
+
 <pre class="mermaid">
-%%{init: {'gantt': {'leftPadding': 150}}}%%
+%%{init: {'gantt': {'leftPadding': 150, 'rightPadding': 10}}}%%
 gantt
   dateFormat YYYY-MM-DD
   tickInterval 1month
@@ -431,7 +433,7 @@ gantt
       // Options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
       // Merge options and initialize reveal.js
-      var mergedOptions = mergeObjects({"mermaid":{"theme":"base","themeCSS":"*{ line-height: 1; text-align: initial; }","fontSize":24,"gantt":{"fontSize":12,"sectionFontSize":12,"barGap":12}},"view":"slide","transition":"slide","center":true,"controls":true,"hash":true,"history":true,"progress":true,"slideNumber":true,"mathjax2":{"config":"TeX-AMS_HTML-full","TeX":{"Macros":{"R":"\\mathbb{R}","set":["\\left\\{#1 \\; ; \\; #2\\right\\}",2]}}},"menu":{"side":"left","width":"normal","numbers":false,"titleSelector":"h1,h2,h3,h4","useTextContentForMissingTitles":false,"hideMissingTitles":false,"markers":true,"custom":[{"title":"Project","icon":"<i class='fa fa-sitemap'></i>","content":"<ul class='slide-menu-items'><li class='slide-menu-item'><a href='/'>Home</a></li><li class='slide-menu-item'><a href='./'>Directory</a></li><li class='slide-menu-item'><a href='?view=print'>Print</a></li></ul>"}],"themes":[{"name":"Dark","theme":"../../assets/styles/themes/dark.css"},{"name":"Light","theme":"../../assets/styles/themes/light.css"}],"transitions":false,"openButton":true,"openSlideNumber":false,"keyboard":true,"sticky":false,"autoOpen":true,"delayInit":false,"openOnInit":false,"loadIcons":true}}, queryOptions);
+      var mergedOptions = mergeObjects({"mermaid":{"theme":"base","themeCSS":"*{ line-height: 1; text-align: initial; }","fontSize":24,"gantt":{"fontSize":12,"sectionFontSize":12,"barGap":8}},"view":"slide","transition":"slide","center":true,"controls":true,"hash":true,"history":true,"progress":true,"slideNumber":true,"mathjax2":{"config":"TeX-AMS_HTML-full","TeX":{"Macros":{"R":"\\mathbb{R}","set":["\\left\\{#1 \\; ; \\; #2\\right\\}",2]}}},"menu":{"side":"left","width":"normal","numbers":false,"titleSelector":"h1,h2,h3,h4","useTextContentForMissingTitles":false,"hideMissingTitles":false,"markers":true,"custom":[{"title":"Project","icon":"<i class='fa fa-sitemap'></i>","content":"<ul class='slide-menu-items'><li class='slide-menu-item'><a href='/'>Home</a></li><li class='slide-menu-item'><a href='./'>Directory</a></li><li class='slide-menu-item'><a href='?view=print'>Print</a></li></ul>"}],"themes":[{"name":"Dark","theme":"../../assets/styles/themes/dark.css"},{"name":"Light","theme":"../../assets/styles/themes/light.css"}],"transitions":false,"openButton":true,"openSlideNumber":false,"keyboard":true,"sticky":false,"autoOpen":true,"delayInit":false,"openOnInit":false,"loadIcons":true}}, queryOptions);
       Reveal.initialize({
         ...mergedOptions,
         plugins: [
