@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-regular.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-thin.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-thin-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-extralight.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-extralight-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-light.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-light-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-medium.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-medium-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-semibold.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-semibold-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-bold.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-bold-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-extrabold.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-extrabold-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-black.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('./geist-mono-black-italic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 900;
+}

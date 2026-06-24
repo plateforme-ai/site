@@ -1,0 +1,124 @@
+/**
+ * Spiral styles.
+ */
+
+.spiral {
+  --spiral-text: var(--r-main-color);
+  --spiral-description: color-mix(in oklch, var(--r-main-color) 50%, transparent);
+  --spiral-card: color-mix(in oklch, var(--r-background-color) 92%, var(--r-main-color));
+  --spiral-filter-primary: brightness(0) saturate(100%) invert(34%) sepia(87%) saturate(7400%) hue-rotate(258deg) brightness(98%) contrast(95%);
+  --spiral-filter-secondary: brightness(0) saturate(100%) invert(44%) sepia(61%) saturate(650%) hue-rotate(44deg) brightness(95%) contrast(92%);
+  --spiral-icon-size: 2rem;
+
+  position: relative;
+  width: 95%;
+  max-width: 1080px;
+  margin: 4rem auto;
+  aspect-ratio: 16 / 9;
+  color: var(--r-main-color);
+  font-family: var(--r-main-font);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.spiral *,
+.spiral *::before,
+.spiral *::after {
+  box-sizing: border-box;
+}
+
+.spiral__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.spiral__track,
+.spiral__arrow {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 8;
+}
+
+.spiral__tail {
+  fill: var(--spiral-card);
+  stroke: none;
+}
+
+.spiral__card {
+  position: absolute;
+  width: 22%;
+  min-height: 12.5%;
+  padding: 2%;
+  background: var(--spiral-card);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.spiral__icon {
+  margin: 0 0 10px !important;
+  width: var(--spiral-icon-size);
+  height: var(--spiral-icon-size);
+}
+
+.spiral__icon.primary {
+  filter: var(--spiral-filter-primary);
+}
+
+.spiral__icon.secondary {
+  filter: var(--spiral-filter-secondary);
+}
+
+.spiral__card > p.title {
+  margin: 0 0 5px;
+  color: var(--spiral-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.spiral__card > p.description {
+  margin: 0;
+  color: var(--spiral-description);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.spiral__node {
+  position: absolute;
+  width: 2.25%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--color-graylight);
+  border: 4px solid currentColor;
+  z-index: 5;
+}
+
+.spiral__node::before {
+  content: attr(data-num);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 5px);
+  transform: translateX(-50%);
+  font-size: clamp(8px, 0.85vw, 11px);
+  font-weight: 800;
+  color: currentColor;
+}
+
+.spiral__node.muted {
+  color: var(--color-muted);
+}
+
+.spiral__node.secondary {
+  color: var(--color-secondary);
+}
+
+.spiral__node.primary {
+  color: var(--color-primary);
+}

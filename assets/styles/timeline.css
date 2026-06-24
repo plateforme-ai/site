@@ -1,0 +1,175 @@
+/**
+ * Timeline styles.
+ */
+
+.timeline {
+  --timeline-text: var(--r-main-color);
+  --timeline-description: color-mix(in oklch, var(--r-main-color) 50%, transparent);
+  --timeline-card: color-mix(in oklch, var(--r-background-color) 92%, var(--r-main-color));
+  --timeline-filter-primary: brightness(0) saturate(100%) invert(34%) sepia(87%) saturate(7400%) hue-rotate(258deg) brightness(98%) contrast(95%);
+  --timeline-filter-secondary: brightness(0) saturate(100%) invert(44%) sepia(61%) saturate(650%) hue-rotate(44deg) brightness(95%) contrast(92%);
+  --timeline-icon-size: 2.5rem;
+  --timeline-track-height: 0.6rem;
+  --timeline-marker-size: 1.3rem;
+  --timeline-column-gap: 2.5rem;
+  --timeline-icon-gap: 1.5rem;
+  --timeline-card-gap: 1.5rem;
+  --timeline-progress: 60%;
+
+  width: 95%;
+  max-width: 1080px;
+  margin: 4rem auto;
+  font-family: var(--r-main-font);
+  font-size: 0.62em;
+  line-height: 1.5 !important;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.timeline *,
+.timeline *::before,
+.timeline *::after {
+  box-sizing: border-box;
+}
+
+.timeline__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline__icons-row,
+.timeline__markers,
+.timeline__cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--timeline-column-gap);
+}
+
+.timeline__icons-row {
+  align-items: flex-end;
+  justify-items: center;
+  min-height: 4.25rem;
+  padding-bottom: var(--timeline-icon-gap);
+}
+
+.timeline__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.timeline__icon {
+  display: block;
+  flex-shrink: 0;
+  width: var(--timeline-icon-size);
+  height: var(--timeline-icon-size);
+  object-fit: contain;
+}
+
+.timeline__icon.primary {
+  filter: var(--timeline-filter-primary);
+}
+
+.timeline__icon.secondary {
+  filter: var(--timeline-filter-secondary);
+}
+
+.timeline__track {
+  position: relative;
+  height: calc(var(--timeline-marker-size) + 0.5rem);
+  margin-bottom: var(--timeline-card-gap);
+}
+
+.timeline__track-background,
+.timeline__track-progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: var(--timeline-track-height);
+  border-radius: 999px;
+}
+
+.timeline__track-background {
+  right: 0;
+  background: var(--r-main-color);
+}
+
+.timeline__track-progress {
+  width: var(--timeline-progress);
+  background: var(--color-secondary);
+}
+
+.timeline__markers {
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  pointer-events: none;
+}
+
+.timeline__marker {
+  justify-self: center;
+  width: var(--timeline-marker-size);
+  height: var(--timeline-marker-size);
+  border-radius: 50%;
+  background: var(--color-graylight);
+  border: 3.5px solid var(--color-secondary);
+}
+
+.timeline__marker.target {
+  border-color: var(--color-primary);
+  box-shadow:
+    0 0 0 3px var(--r-main-color),
+    0 0 0 6px color-mix(in oklch, var(--color-primary) 35%, transparent),
+    0 2px 6px rgba(15, 23, 42, 0.1);
+}
+
+.timeline__card {
+  width: 100%;
+  min-height: 8rem;
+  padding: 1.15rem 1rem 1.25rem;
+  background: var(--timeline-card);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 6px 20px rgba(15, 23, 42, 0.08);
+  text-align: center;
+}
+
+.timeline__card > p.period {
+  display: inline-block;
+  padding: 0.2rem 0.4rem 0rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.timeline__card > p.period.muted {
+  background: var(--color-muted);
+  color: var(--color-graylight);
+}
+
+.timeline__card > p.period.primary {
+  background: var(--color-primary);
+  color: var(--color-graylight);
+}
+
+.timeline__card > p.period.secondary {
+  background: var(--color-secondary);
+  color: var(--color-graylight);
+}
+
+.timeline__card > p.title {
+  margin: 0 0 0.65rem;
+  color: var(--timeline-text);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.timeline__card > p.description {
+  margin: 0;
+  color: var(--timeline-description);
+  font-size: 1rem;
+  font-weight: 400;
+}

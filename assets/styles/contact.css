@@ -1,0 +1,77 @@
+/**
+ * Contact styles.
+ */
+
+.contact {
+  --contact-muted: color-mix(in oklch, var(--r-main-color) 50%, transparent);
+  --contact-filter-logo: brightness(0) invert(1);
+
+  width: 95%;
+  max-width: 720px;
+  margin: 3rem auto 0;
+  text-align: center;
+  font-family: var(--r-main-font);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.contact *,
+.contact *::before,
+.contact *::after {
+  box-sizing: border-box;
+}
+
+.contact__lead {
+  margin: 0 0 2.5rem;
+  color: var(--r-main-color);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contact__email {
+  margin: 0 0 1.5rem;
+}
+
+.contact__email a {
+  color: var(--r-link-color);
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.contact__email a:hover {
+  color: var(--r-link-color-hover);
+}
+
+.contact__qr {
+  position: relative;
+  display: block;
+  width: 40%;
+  max-width: 280px;
+  margin: auto;
+}
+
+.contact__qr-code {
+  display: block;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.contact__qr-logo {
+  position: absolute;
+  color: var(--r-main-color);
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  margin: 0 !important;
+  transform: translate(-64%, -50%);
+  filter: var(--contact-filter-logo);
+}
+
+.contact__note {
+  margin: 0;
+  color: var(--contact-muted);
+  font-size: 1.25rem;
+  font-weight: 400;
+}

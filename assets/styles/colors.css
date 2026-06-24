@@ -1,0 +1,22 @@
+/**
+ * Colors styles.
+ * @see https://coolors.co/050f25-253861-3d0561-9d084d-c20a2b-d9220c-e7630c-f0a80d
+ */
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-muted: #525252;
+  --color-graydark: #1a1a1a;
+  --color-graylight: #e6e6e6;
+  --color-primary: #7c3aed;
+  --color-secondary: #65a30d;
+  --color-background: #050f25;
+  --color-foreground: #d3d9e7;
+  --color-gradient1: #3d0561;
+  --color-gradient2: #9d084d;
+  --color-gradient3: #c20a2b;
+  --color-gradient4: #d9220c;
+  --color-gradient5: #e7630c;
+  --color-gradient6: #f0a80d;
+}
