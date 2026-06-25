@@ -80,21 +80,21 @@
       </div>
     </div>
     <div class="timeline__cards-row">
-      <article class="timeline__card">
+      <div class="timeline__card">
         <p class="period muted">Hier</p>
         <p class="title">Exécuter</p>
         <p class="description">Les processus reposent directement sur l'humain</p>
-      </article>
-      <article class="timeline__card">
+      </div>
+      <div class="timeline__card">
         <p class="period secondary">Aujourd'hui</p>
         <p class="title">Augmenter</p>
         <p class="description">L'humain est assisté par l'IA</p>
-      </article>
-      <article class="timeline__card">
+      </div>
+      <div class="timeline__card">
         <p class="period primary">Demain</p>
         <p class="title">Superviser</p>
         <p class="description">L'humain supervise les processus exécutés par l'IA</p>
-      </article>
+      </div>
     </div>
   </div>
 </div>
@@ -105,10 +105,10 @@
 
 ## Exploiter vos processus métier
 
-<small>L'IA ne remplace pas vos processus métier<br />Elle s’appuie sur eux pour les optimiser et les automatiser</small>
+<small>L'IA ne remplace pas vos processus métier<br />Elle s'appuie sur eux pour les optimiser et les automatiser</small>
 
 <div class="process">
-  <article class="process__card">
+  <div class="process__card">
     <p class="process__badge secondary">Exploiter</p>
     <h3 class="process__title">Vos processus</h3>
     <p class="process__text">
@@ -120,7 +120,7 @@
       <li><input type="checkbox" checked disabled /> Flux BPM</li>
       <li><input type="checkbox" checked disabled /> Process mining</li>
     </ul>
-  </article>
+  </div>
 
   <div class="process__bridge" aria-hidden="true">
     <div class="process__hub">
@@ -136,7 +136,7 @@
     </div>
   </div>
 
-  <article class="process__card">
+  <div class="process__card">
     <p class="process__badge primary">Automatiser</p>
     <h3 class="process__title">Vos skills</h3>
     <p class="process__text">
@@ -152,7 +152,7 @@
       <li><input type="checkbox" checked disabled /> Scripts & Transactions</li>
       <li><input type="checkbox" checked disabled /> Workflows</li>
     </ul>
-  </article>
+  </div>
 </div>
 
 ---
@@ -180,7 +180,7 @@
   <div class="spiral__card" data-f="0.20" data-dx="17" data-dy="-10">
     <img src="./assets/svg/bot.svg" alt="" class="spiral__icon primary" />
     <p class="title">Décider</p>
-    <p class="description">Recommandations IA<br />Plan d’action<br />Automatisation</p>
+    <p class="description">Recommandations IA<br />Plan d'action<br />Automatisation</p>
   </div>
   <div class="spiral__node secondary" data-f="0.35"></div>
   <div class="spiral__card" data-f="0.35" data-dx="17" data-dy="10">
@@ -242,14 +242,14 @@
   <div class="video-split__scenario">
     <p class="video-split__label">Scénario</p>
     <p class="video-split__text">
-      Un opérateur IA reçoit un ticket de support client. L’IA analyse le contexte,
-      propose une résolution, exécute les actions dans l’application de support test,
+      Un opérateur IA reçoit un ticket de support client. L'IA analyse le contexte,
+      propose une résolution, exécute les actions dans l'application de support test,
       puis le superviseur valide ou corrige le résultat.
     </p>
     <ul class="video-split__points">
       <li><input type="checkbox" checked disabled /> Création d'un ticket</li>
       <li><input type="checkbox" checked disabled /> Analyse et classification par l'IA</li>
-      <li><input type="checkbox" checked disabled /> Résolution par l’IA</li>
+      <li><input type="checkbox" checked disabled /> Résolution par l'IA</li>
       <li><input type="checkbox" checked disabled /> Supervision humaine</li>
     </ul>
   </div>
@@ -350,7 +350,7 @@ gantt
       L'expertise métier pour cadrer les processus critiques, et l'ingénierie IA pour les traduire en flux automatisés, fiables et supervisables.
     </p>
   </div>
-  <article class="team__card">
+  <div class="team__card">
     <img src="./assets/svg/user.svg" alt="" class="team__icon primary" />
     <p class="team__name">Rodolphe Barbanneau</p>
     <p class="team__description">Vision produit et conception de solutions IA en environnement enterprise</p>
@@ -359,8 +359,8 @@ gantt
       <li><input type="checkbox" checked disabled /> Automatisation de flux</li>
       <li><input type="checkbox" checked disabled /> Sécurité &amp; Supervision</li>
     </ul>
-  </article>
-  <article class="team__card">
+  </div>
+  <div class="team__card">
     <img src="./assets/svg/user.svg" alt="" class="team__icon secondary" />
     <p class="team__name">Thierry Barbanneau</p>
     <p class="team__description">Intégration et connaissance approfondie des enjeux opérationnels</p>
@@ -369,7 +369,7 @@ gantt
       <li><input type="checkbox" checked disabled /> Processus métier</li>
       <li><input type="checkbox" checked disabled /> Relation client &amp; Adoption</li>
     </ul>
-  </article>
+  </div>
 </div>
 
 ---
@@ -408,9 +408,10 @@ gantt
     <script src="../../assets/scripts/lib/chart.umd.min.js"></script>
     <script src="../../assets/scripts/lib/chartjs-plugin-datalabels.min.js"></script>
     <script src="../../assets/scripts/lib/mermaid.min.js"></script>
+    <script src="../../assets/scripts/analytics.js"></script>
     <script src="../../assets/scripts/colors.js"></script>
     <script src="../../assets/scripts/mermaid.js"></script>
-    <script src="../../assets/scripts/spiral.js"></script>
+    <script src="assets/js/spiral.js"></script>
 
     <script>
       // Handle options merging
